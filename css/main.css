@@ -1,0 +1,56 @@
+
+body
+{
+	margin-top: 100px;
+	background-image: url("image/Dogtitle.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:100%;
+　	height:100%;
+	
+}
+
+
+@font-face {
+   font-family: my-fristfont;
+   src: url(font/Modak-Regular.ttf); }
+
+.send-bg
+{
+	background-image: url("image/wood.png");
+	width: 130px;
+}
+.send-bg p
+{
+	margin:0;
+	font-family: 'Modak', cursive;
+}
+.delete-bg
+{
+	background-image: url("image/wood-dark.png");
+	width: 130px;
+}
+.delete-bg p
+{
+	margin:0;
+	font-family: 'Modak', cursive;
+	color: white;
+}
+
+.Dogtitle-circle-set
+{
+  border: 5px #FFAC0A solid;
+}
+.img-left
+{
+    float: left;
+}
+.addList .text 
+	{
+      padding:10px;
+      border: 2px solid rgb(73, 41, 10);
+    }
+.mrtop
+{
+	margin-top: 10px;
+}
