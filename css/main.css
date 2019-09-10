@@ -36,6 +36,12 @@ body
 	font-family: 'Modak', cursive;
 	color: white;
 }
+.li-bg
+{
+	background-color: rgba(255,255,255,0.6);
+}
+
+
 
 .Dogtitle-circle-set
 {

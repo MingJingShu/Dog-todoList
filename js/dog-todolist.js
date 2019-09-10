@@ -20,7 +20,7 @@ function updataList(data)
     //str += '<li> <a href="#" data-index=' + i + ' />刪除</a>'+data[i].content + '</span></li>';
     //str += '<li class ="list-group-item" > <a href="#" data-index=' + i + ' />刪除</a>'+data[i].content+'</li>';
     //str += `<li class ="list-group-item"> <a href="#" data-index= ${i}>刪除</a>${data[i].content}</span></li>`;
-    str +=`<li class ="list-group-item">
+    str +=`<li class ="list-group-item li-bg">
               <button  data-index= ${i} type="button" class="delete-btn send send-bg clearfix" >
                       <img src="image/icons8-cat-footprint-24.png" class="img-left">
                       <p>Delete!</p>
