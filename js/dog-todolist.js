@@ -18,7 +18,15 @@ function updataList(data)
   for(var i =0; i<data.length; i++)
   {
     //str += '<li> <a href="#" data-index=' + i + ' />刪除</a>'+data[i].content + '</span></li>';
-    str += '<li class ="list-group-item" > <a href="#" data-index=' + i + ' />刪除</a>'+data[i].content+'</li>';
+    //str += '<li class ="list-group-item" > <a href="#" data-index=' + i + ' />刪除</a>'+data[i].content+'</li>';
+    //str += `<li class ="list-group-item"> <a href="#" data-index= ${i}>刪除</a>${data[i].content}</span></li>`;
+    str +=`<li class ="list-group-item">
+              <button  data-index= ${i} type="button" class="delete-btn send send-bg clearfix" >
+                      <img src="image/icons8-cat-footprint-24.png" class="img-left">
+                      <p>Delete!</p>
+                  </button>
+                  ${data[i].content}
+              </li>`
 
     /// str += '<li class ="list-group-item" data-index = '+i+'>'+data[i].content+
 				// 	'<button type="button" class="delete-btn delete-bg clearfix">'+
@@ -47,8 +55,6 @@ function updataList(data)
     localStorage.setItem('listData', JSON.stringify(data));
     
     updataList(data);
-
-    
   }
 
 
@@ -56,7 +62,7 @@ function updataList(data)
  {
   e.preventDefault();
   console.log("delete :e.target.nodeName ="+e.target.nodeName);
-  if(e.target.nodeName !== 'A'){return}
+  if(e.target.nodeName !== 'P'){return}
     var index = e.target.dataset.index;
     console.log('e.target.dataset.index ='+index);
     data.splice(index,1);
